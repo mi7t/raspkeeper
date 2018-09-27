@@ -1,0 +1,9 @@
+#!/bin/sh
+#put this to /etc/network/if-up.d
+
+config="/etc/iptables.conf"
+
+if [ -e $config ]
+then
+        # 
+        /sbin/iptables-restore $config
