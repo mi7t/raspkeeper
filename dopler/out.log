@@ -1,0 +1,5 @@
+Press Enter when ready
+>Traceback (most recent call last):
+  File "read_daemon3.py", line 45, in <module>
+    raw_input("Press Enter when ready\n>")  
+IOError: [Errno 9] Bad file descriptor

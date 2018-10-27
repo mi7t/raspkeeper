@@ -1,0 +1,6 @@
+#* * * * * cd /home/pi/connectionmgr; ./connect_modem_auto.sh start >> connect.log
+* * * * * cd /home/pi/connectionmgr; ./auto_reconnect_modem.sh >> reconnect_log.log
+* * * * * cd /home/pi/connectionmgr; ./sms_reboot.sh sms_reboot.log
+10,20,30,40,50 * * * * cd /home/pi/scripts/oper; ./fscheck.sh >> fscheck.log 
+#@reboot cd /home/pi/connectionmgr; ./connect_modem.sh >> bconnect.log
+20 14 * * * /sbin/reboot
